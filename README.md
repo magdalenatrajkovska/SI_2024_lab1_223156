@@ -1,1 +1,1 @@
-# Magdalena Trajkovska\n Index:223156
+Magdalena Trajkovska, 223156
