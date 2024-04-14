@@ -1,0 +1,107 @@
+4.Иницијализирање на Git во директориумот
+ $ git init
+Initialized empty Git repository in C:/Users/Com/Desktop/SI_2024_lab1_223156/.git/
+
+5. поврзување на локалниот репозиториум со оддалечениот репозиториум
+$ git remote add origin https://github.com/magxany/SI_2024_lab1_223156.git
+
+6. додавање на README и commit na master
+$ echo "# Magdalena Trajkovska\n Index:223156" > README.md
+$ git add README.md
+$ git commit -m "Initial commit"
+
+7. staging на fileovvite и commit
+$ git add SILab1Main.java SILab1_1.java SILab1_2.java
+$ git commit -m "Add starter code"
+
+8. upload на  files за синхронизација со remote repo
+$ git push origin master
+
+9. креирање на 2 гранки 
+$ git branch bug1
+$ git branch bug2
+
+10. префрлање на гранка bug1
+$ git checkout bug1
+
+11. поправанје на грешката во методот , stageing на file-от и прв commit na bug1
+$ git add SILab1_1.java
+$ git commit -m "Fix wrong condition in filterOddLengtStrings"
+
+12.префрлање на гранка bug2
+$ git checkout bug2
+
+13.поправанје на грешката во методот , stageing на file-от и прв commit na bug2
+$ git add SILab1_2.java
+$ git commit -m "Fix wrong condition in makeBigStringForm"
+
+14. од bug1 на bug2
+$ git checkout bug1
+
+15. промена на main , stageing и vtor commit на bug 1
+$ git add SILab1Main.java
+$ git commit -m "Call method filterOddLengtStrings in main class"
+
+16. враќање на  branch bug2
+$ git checkout bug2
+
+17. промена на main , stageing и vtor commit на bug 2
+$ git add SILab1Main.java
+$ git commit -m "Call method makeBigStringForm in main class"
+
+18. синхронизација, upload на github на master bug1 и bug2 со нови commits 
+$ git push origin master
+$ git push origin bug1
+$ git push origin bug2
+
+19.
+$ git checkout master
+
+20.спојување на гранката bug1 со master with fast-forward no conflict
+$ git merge bug1
+
+21. синхронизација, upload на github на master bug1 и bug2 со нови commits 
+$ git push origin master
+$ git push origin bug1
+$ git push origin bug2
+
+22. префрлање од master на bug2
+$ git checkout bug2
+
+23.rebase спрема гранката bug2 према master, има конфликт, stageing (add) и повторно rebase (спојување на bug2 so master)
+$ git rebase master
+$ git add SILab1Main.java
+$ git rebase --continue
+
+24. префрлање од bug2 на master
+$ git checkout master
+
+25. спојување на maste so bug2 with fast-forward no conflicts
+$ git merge bug2
+
+26. Синхронизација на сите гранки со оддалечениот репозиториум од сите гранки, upload на github
+$ git push origin master
+$ git push origin bug1
+$ git push origin bug2
+
+27. употреба на --force
+$ git push --force origin bug2
+
+28. Прикажување на логовите, staging na files и трет commit  на master branch
+$ git log
+$ git add logs.txt
+$ git add 223156.txt
+$ git commit -m "Final commit"
+
+29.Финална синхронизација на сите гранки со оддалечениот репозиториум од сите гранки, upload на github
+$ git push origin master
+$ git push origin bug1
+$ git push origin bug2
+
+
+
+
+
+
+
+

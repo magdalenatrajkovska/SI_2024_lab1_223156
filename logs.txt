@@ -1,0 +1,22 @@
+commit 52bf44c8b4abb53c81fc74286a8467e454a782f5 (HEAD -> master, origin
+/master, origin/bug2, bug2)
+Author: Com <magdalenastrajkovska@gmail.com>
+Date:   Sun Apr 14 17:46:36 2024 +0200
+
+    Call method makeBigStringForm in main class
+
+commit 2fb86566e09427130222cb69bba63f2ce3caaa80
+Author: Com <magdalenastrajkovska@gmail.com>
+Date:   Sun Apr 14 16:20:58 2024 +0200
+
+    Fix wrong condition in makeBigStringForm
+
+commit 232a8409483523a5509f1fc53e3590e1266e357d (origin/bug1, bug1)
+Author: Com <magdalenastrajkovska@gmail.com>
+Date:   Sun Apr 14 16:43:32 2024 +0200
+
+    Call method filterOddLengtStrings in main class
+
+commit a26408c4fb63dadacd438dd547cba7dd020082ba
+Author: Com <magdalenastrajkovska@gmail.com>
+Date:   Sun Apr 14 16:11:25 2024 +0200
